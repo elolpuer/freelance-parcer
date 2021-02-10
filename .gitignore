@@ -1,0 +1,7 @@
+.env
+.idea
+.vscode
+.git
+.docker
+conf
+env

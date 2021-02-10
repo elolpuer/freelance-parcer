@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+    rabbitmq:
+      image: rabbitmq:3-management-alpine
+      container_name: rabbitmq
+      ports:
+        - 15672:15672
+      expose: 
+        - "5672"
+    parcer: 
+      build: ./Parcer
+      restart: always
+      depends_on:
+          - "rabbitmq"
+    site:
+      build: ./Site
+      restart: always
+      ports: 
+        - "5000:5000"
+    telegram:
+      build: ./TelegramBot
+      restart: always
+
+    
