@@ -1,7 +1,7 @@
 # FreelanceParcer
 
-###### Небольшой проект на микросервисах с использованием RabbitMQ
-###### Парсер с фриланс-сайта отдает данные в телеграмм-бот и на сайт
+###### A small project on microservices using RabbitMQ
+###### Parser from freelance site sends data to telegram bot and website
 
 <img src="./scr.png">
 
